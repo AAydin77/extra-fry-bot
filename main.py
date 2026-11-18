@@ -136,8 +136,16 @@ async def get_status(interaction: discord.Interaction):
 
     embed = discord.Embed(title="MC server status")
     if state == "running":
+        
+        session_uptime = data["attributes"]["resources"]["uptime"]
+        seconds = session_uptime // 1000
+        minutes, secs = divmod(seconds, 60)
+        hours, minutes = divmod(minutes, 60)
+        days, hours = divmod(hours, 24)
+        session_uptime = (f"{days}D, {hours}H, {minutes}M, {secs}S")
         embed.add_field(name="Status", value=f"The server is: {state}. ✅",)
         embed.color= discord.Color.green()
+        embed.add_field(name="Session uptime", value=f"{session_uptime} ⏳",inline=False)
     else:
         embed.add_field(name="Status", value=f"The server is: {state}. 🛑" )
         embed.color= discord.Color.red()
