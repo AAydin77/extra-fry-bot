@@ -20,8 +20,8 @@ Ok, love you see ya, bye :).
 
 1. Clone the repo and open the folder:
    ```
-   git clone https://github.com/AAydin77/REPO.git
-   cd REPO
+   git clone https://github.com/AAydin77/extra-fry-bot.git
+   cd extra-fry-bot
    ```
 2. Create a venv and install the packages in `requirements.txt`. Make sure all of them are installed, as the script will not work otherwise:
    ```
