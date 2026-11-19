@@ -1,7 +1,4 @@
 #Make sure these are installed as they are needed for the code to work.
-discord
 discord.py
 aiohttp
-asyncio
 dotenv 
-random
