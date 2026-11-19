@@ -29,6 +29,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
    ```
+   ```
 3. Fill in the `.env` (see Configuration below), then run the bot:
    ```
    python main.py
