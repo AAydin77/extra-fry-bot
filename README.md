@@ -25,10 +25,9 @@ Ok, love you see ya, bye :).
    ```
 2. Create a venv and install the packages in `requirements.txt`. Make sure all of them are installed, as the script will not work otherwise:
    ```
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-   ```
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
    ```
 3. Fill in the `.env` (see Configuration below), then run the bot:
    ```
